@@ -31,24 +31,24 @@ body {
 .battlefield {
     border: 1px solid rgb(216, 216, 216);
     padding: 0 0 100px 0;
-    width: 100%;
+    margin: 0 auto;
 }
 
 .deck-ply1 {
-    width: 60%;
+    /* width: 60%; */
     margin: 0 auto;
     display: grid;
-    grid-gap: 50px;
-    grid-template-columns: repeat(4, auto);
+    grid-gap: 30px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 
 }
 
 .deck-ply2 {
-    width: 60%;
+    /* width: 60%; */
     margin: 0 auto;
     display: grid;
-    grid-gap: 50px;
-    grid-template-columns: repeat(4, auto);
+    grid-gap: 30px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 }
 
 .card-ply1 {
@@ -68,20 +68,20 @@ body {
 }
 
 .card-ply1:nth-child(even) {
-    background: #f88d8d;
+    background: rgb(151, 219, 145);
 }
 
 .card-ply1:nth-child(odd) {
-    background: rgb(168, 235, 168);
+    background: rgb(144, 177, 219);
 }
 
 
 .card-ply2:nth-child(even) {
-    background: #ddfc97;
+    background: rgb(228, 144, 144);
 }
 
 .card-ply2:nth-child(odd) {
-    background: #a9dff8;
+    background: rgb(230, 224, 140);
 }
 
 .card-ply1:hover, .card-ply2:hover {
@@ -93,8 +93,3 @@ body {
     padding: 20px 0 0 0;
     text-align: center;
 }
-
-
-
-
-
